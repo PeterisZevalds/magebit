@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.content-container {
+    float: left;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    width: 35.41%;
+    height: 100vh;
+}
+
+
+.top-bar {
+    height: 3.70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 14.70%;
+    padding-right: 14.70%;
+    padding-top: 9.26%;
+    height: 40px;
+}
+
+.top-bar img {
+    min-width: 25px;
+    min-height: 40px;
+}
+.logo-name {
+    padding-top: 20px;
+    margin-right: 16.61%;
+    margin-left: 15px;
+}
+
+.top-bar a {
+    padding-top: 20px;
+    justify-content: flex-end;
+    list-style-type: none;
+    white-space: nowrap;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 8.41%;
+    color: #6A707B;
+    
+}
+
+
+.picture{
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    width: 64.59%;
+    
+    
+}
+
+
+
+.headings {
+    margin-top: 34.63%;
+    padding-left: 20.58%;
+    padding-right: 20.58%;
+    
+}
+.heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: #131821;
+}
+.subheading {
+    margin-top: 15px;
+    min-width: 58.8%;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6A707B;
+}
+
+
+
+
+.form-container {
+    margin-top: 4.63%;
+}
+
+.email {
+    display: flex;
+    width: 100%;
+}
+.email-arrow {
+    
+}
+.submit-button{
+    min-width: 12.20%;
+    margin-left: -12.20%;
+    z-index: 1;
+    background-image: url(../img/ic_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 14px;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    
+}
+.email-input-field {
+    position: relative;
+    height: 70px;
+    box-sizing: border-box;
+    border: 1px solid #E3E3E4;
+    min-width: 97.5%;
+    margin-left: 14.70%;
+    border-left: 4px solid #4066A5;
+}
+
+.email-input-field, textarea {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 44px;
+}
+
+.error {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 14.70%;
+    margin-right: 14.70%;
+    display: block;
+    color: red;
+}
+
+.checkboxInput {
+    padding-top: 53px;
+    padding-left: 20.58%;
+}
+
+.checkboxInput input{
+   height: 26px;
+   width: 26px;
+   display: inline-block;
+}
+
+.checkbox-text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 26px;
+    padding-left: 15px;
+    padding-bottom: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #6A707B;
+}
+.tos {
+    color: #131821;
+}
+
+
+
+
+
+
+
+.social-tab {
+    padding-top: 50px;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social-tab .logo-border {
+    border: 2px solid #E3E3E4;
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 2.94%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+.logo-social {
+    position: absolute; 
+}
+
+li a {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #6A707B;
+    line-height: 26px;
+}
+
+hr {
+    display: block;
+    width: 58.82%;
+    margin-left: 20.58% !important;
+    height: 1px;
+    border: none;
+    margin-top: 50px;
+    background-color: #E3E3E4;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-name {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .top-bar a {
+        white-space: normal;
+    }
+}
+
+
+/* 
+
+Style for success page
+
+*/
+
+.success{
+    margin-left: 20.59%;
+    margin-right: 20.59%;
+    margin-top: 24.91%;
+}
+
+.logo-success {
+    height: 70px;
+    width: 44px;
+    display: block;
+}
+
+.headings-success{
+    margin-top: 40px;
+    
+}

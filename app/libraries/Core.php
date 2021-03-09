@@ -7,7 +7,7 @@
 
 class Core
 {
-    protected $currentController = 'FrontPages';
+    protected $currentController = 'Subscriptions';
     protected $currentMedthod = 'index';
     protected $params = [];
 
