@@ -4,25 +4,28 @@
 
 ## About project
 
-    This is a simple PHP MVC project that I made as developer task for ScandiWeb.
-    Project has MVC structure with CRUD operations where you can create, read, and delete products.
+    This is a junior/mid developer task for Magebit
     
 ## How to use
 
-        - To run this project locally you will need local web server. I use XAMPP, 
-    but there are different software stacks that you can use 
-    (https://en.wikipedia.org/wiki/List_of_Apache%E2%80%93MySQL%E2%80%93PHP_packages)
-        - Open XAMPP, start your Apache and MySQL modules.
-        - Open phpmyadmin (http://localhost/phpmyadmin/).
-        - Create database named 'scandiwebdb', or you can choose whatever name you want, 
-    but then you will have to change app/config/config.php file accordingly.
-        - Select your database and import products.sql file found in app/data/products.sql
-        - Now you can access the site trought your localhost connection.
-    
+        -To run this project locally clone this project in your web server folder (example - "C:\PhP\htdocs" for XAMPP).
+        -Make sure the folder name is "magebit" or you will have to change .htaccess and config files.
+
+        -Create MySQL database
+        -Select created database and run SQL script found in > app/data/emails.sql <
+        -Configure app/config/config.php
+                define('DB_HOST', 'localhost');
+                define('DB_USER', 'YOUR_USER');
+                define('DB_PASS', 'YOUR_PASSWORD');
+                define('DB_NAME', 'YOUR_DATABASE_NAME');
+                define('URLROOT', 'http://localhost/YOUR_FOLDER_NAME');
+
+        --If you changed project folder name, you will need to change .htaccess file in /public/.htaccess
+                line4 : RewriteBase /"YOUR_FOLDER_NAME"/public
+        
 ## Built With
 
 - PHP
-- Bootstrap4
 - HTML/CSS/JavaScript
 - No frameworks - PLAIN PHP
 

@@ -9,14 +9,14 @@ class Email
 
     public function getAllEmailsSortByDate()
     {
-        $this->db->query('SELECT * FROM emails ORDER BY date DESC');
+        $this->db->query('SELECT * FROM emails ORDER BY date ASC');
         $results = $this->db->resultset();
         return $results;
     }
 
     public function getAllEmailsSortByName()
     {
-        $this->db->query('SELECT * FROM emails ORDER BY email DESC');
+        $this->db->query('SELECT * FROM emails ORDER BY email ASC');
         $results = $this->db->resultset();
         return $results;
     }

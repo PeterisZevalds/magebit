@@ -19,6 +19,13 @@ class Emails extends Controller
         $this->view('email/list', $data);
     }
 
+    /* 
+    
+    Search by email input
+    Model -> Calls getEmailByName method and reloads view with new data
+
+    */
+
     public function searchByEmail()
     {
         $emailToSearch = $_POST['searchEmail'];
@@ -30,6 +37,13 @@ class Emails extends Controller
         ];
         $this->view('email/list', $data);
     }
+
+    /* 
+    
+    Sort all emails by date
+    Model -> Calls getAllEmailsSortByDate method and reloads view with new data
+
+    */
 
     public function sortByDate()
     {
@@ -43,6 +57,13 @@ class Emails extends Controller
         $this->view('email/list', $data);
     }
 
+    /* 
+    
+    Filter by email domain
+    Model -> Calls filterEmailByDomain method and reloads view with new data
+
+    */
+
     public function filterByDomain()
     {
         $domain = $_POST['filterByDomain'];
@@ -55,6 +76,13 @@ class Emails extends Controller
         $this->view('email/list', $data);
     }
 
+    /* 
+    
+    Sort all emails by name
+    Model -> Calls getAllEmailsSortByName method and reloads view with new data
+
+    */
+
     public function sortByName()
     {
         $emails = $this->emailModel->getAllEmailsSortByName();
@@ -66,9 +94,16 @@ class Emails extends Controller
         $this->view('email/list', $data);
     }
 
+    /* 
+    
+    Checks for POST method and if any input is selected
+    If there is data in "selected" data in POST method, call delete method and deletes all selected emails
+    Model -> Calls deleteEmails method and reloads view with new data
+
+    */
+
     public function deleteSelected()
     {
-
         if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['selected'])) {
             $emailArray = $_POST['selected'];
             if ($this->emailModel->deleteEmails($emailArray)) {

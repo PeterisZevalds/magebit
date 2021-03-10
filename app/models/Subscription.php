@@ -7,18 +7,24 @@ class Subscription
         $this->db = new Database;
     }
 
+    /*
+
+    adds email into database
+
+    */
+
     public function addEmail($data)
     {
         $this->db->query('INSERT INTO emails (email) VALUES (:email)');
 
-            // Bind values
-            $this->db->bind(':email', $data['email']);
+        // Bind values
+        $this->db->bind(':email', $data['email']);
 
-            // Execute
-            if ($this->db->execute()) {
-                return true;
-            } else {
-                return false;
-            }
+        // Execute
+        if ($this->db->execute()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

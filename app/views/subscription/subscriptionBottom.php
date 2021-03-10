@@ -1,18 +1,11 @@
 <hr>
-    <div class="social-tab">
-        <div class="logo-border">
-            <img class="logo-social" src="<?php echo URLROOT; ?>/img/ic_facebook.png">
-        </div>
-        <div class="logo-border">
-            <img class="logo-social" src="<?php echo URLROOT; ?>/img/ic_instagram.png">
-        </div>
-        <div class="logo-border">
-            <img class="logo-social" src="<?php echo URLROOT; ?>/img/ic_twitter.png">
-        </div>
-        <div class="logo-border">
-            <img class="logo-social" src="<?php echo URLROOT; ?>/img/ic_youtube.png">
-        </div>
-    </div>
+<div class="social-tab">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+</div>
+</div>
 </div>
 
 

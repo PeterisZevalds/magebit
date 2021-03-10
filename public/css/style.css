@@ -4,7 +4,18 @@
     box-sizing: border-box;
 }
 
+.picture{
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    width: 64.59%;
+}
 
+/*
+
+Main container section
+
+*/
 
 .content-container {
     float: left;
@@ -13,26 +24,35 @@
     height: 100vh;
 }
 
+/*
+
+Top bar section (logo + links)
+
+*/
 
 .top-bar {
     height: 3.70%;
-    display: flex;
+    position: relative;
     justify-content: space-between;
-    flex-direction: row;
     padding-left: 14.70%;
     padding-right: 14.70%;
     padding-top: 9.26%;
     height: 40px;
 }
 
+.logo-wrapper {
+    position: absolute;
+}
+
 .top-bar img {
     min-width: 25px;
     min-height: 40px;
+    
 }
+
 .logo-name {
-    padding-top: 20px;
-    margin-right: 16.61%;
-    margin-left: 15px;
+    margin-left: 40px;
+    margin-top: -25px; 
 }
 
 .top-bar a {
@@ -46,27 +66,31 @@
     font-size: 16px;
     margin-left: 8.41%;
     color: #6A707B;
-    
 }
-
-
-.picture{
+.links {
     position: absolute;
-    height: 100vh;
-    z-index: -1;
-    width: 64.59%;
-    
-    
+    right: 0px;
+    width: 60%;
+    padding-top: 20px;
 }
 
+a:link{
+    text-decoration: none;
+}
+
+/*
+
+Main content section (headings)
+
+*/
 
 
 .headings {
     margin-top: 34.63%;
     padding-left: 20.58%;
     padding-right: 20.58%;
-    
 }
+
 .heading {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
@@ -74,6 +98,7 @@
     font-size: 32px;
     color: #131821;
 }
+
 .subheading {
     margin-top: 15px;
     min-width: 58.8%;
@@ -85,7 +110,11 @@
     color: #6A707B;
 }
 
+/*
 
+Form container section
+
+*/
 
 
 .form-container {
@@ -96,9 +125,7 @@
     display: flex;
     width: 100%;
 }
-.email-arrow {
-    
-}
+
 .submit-button{
     min-width: 12.20%;
     margin-left: -12.20%;
@@ -110,8 +137,8 @@
     border:none;
     overflow: hidden;
     background-color: transparent;
-    
 }
+
 .email-input-field {
     position: relative;
     height: 70px;
@@ -164,47 +191,9 @@
     font-size: 16px;
     color: #6A707B;
 }
+
 .tos {
     color: #131821;
-}
-
-
-
-
-
-
-
-.social-tab {
-    padding-top: 50px;
-    
-    display: flex;
-    justify-content: center;
-    
-}
-
-.social-tab .logo-border {
-    border: 2px solid #E3E3E4;
-    border-radius: 50%;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-left: 2.94%;
-    display: flex;
-    
-    justify-content: center;
-    align-items: center;
-}
-.logo-social {
-    position: absolute; 
-}
-
-li a {
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: #6A707B;
-    line-height: 26px;
 }
 
 hr {
@@ -217,9 +206,119 @@ hr {
     background-color: #E3E3E4;
 }
 
-a:link{
-    text-decoration: none;
+/*
+
+Social icon section
+
+*/
+
+.social-tab {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }
+
+.social-tab a~a {
+    margin-left: 20px;
+}
+
+.fa-facebook {
+    color:#131821;
+    opacity: 0.3;
+    
+}
+
+.fa-instagram {
+    color:#131821;
+    opacity: 0.3;
+}
+
+.fa-twitter {
+    color:#131821;
+    opacity: 0.3;
+}
+
+.fa-youtube {
+    color:#131821;
+    opacity: 0.3;
+}
+
+.fa {
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    margin: 20px 3px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px !important;
+  }
+
+/*
+
+Hover/Focus element section
+
+*/
+
+.fa-facebook:hover {
+    border: none;
+    color: #FFFFFF;
+    opacity: 1;
+    background: #4267B2;
+}
+
+.fa-instagram:hover {
+    border: none;
+    color: #FFFFFF;
+    opacity: 1;
+    background: #C13584;
+}
+
+.fa-twitter:hover {
+    border: none;
+    color: #FFFFFF;
+    opacity: 1;
+    background: #1DA1F2;
+}
+
+.fa-youtube:hover {
+    border: none;
+    color: #FFFFFF;
+    opacity: 1;
+    background: #FF0000;
+}
+
+.fa-facebook:active {
+    background: #2F4A80;
+}
+
+.fa-instagram:active {
+    background: #8F2762;
+}
+
+.fa-twitter:active {   
+    background: #177FBF;
+}
+
+.fa-youtube:active {
+    background: #CC0000;
+}
+
+.tos:hover {
+    color: #4066A5;
+}
+
+.tos:active {
+    color: #233759;
+}
+
+/*
+
+Removes logo @media size
+
+*/
 
 @media screen and (max-width: 1200px) {
     .logo-name {
@@ -232,6 +331,163 @@ a:link{
         white-space: normal;
     }
 }
+
+/*
+
+Mobile/Tablet size views
+
+*/
+
+@media screen and (min-width: 300px) and (max-width: 769px) {
+    * {
+        box-sizing: unset;
+    }
+    .bg{
+        /* The image used */
+        background-image: url(../img/image_summer.png);        
+        /* Full height */
+        height: 100vh;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .picture {
+        display: none;
+    }
+        
+    .content {
+        top: 20%;
+        background-color: white;
+        margin-right: 4.46%;
+        margin-left: 4.46%;
+    }
+
+    /*
+
+    Top bar section (logo + links)
+
+    */
+
+    .top-bar {
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 20px;
+        height: 66px;
+        background-color: #FFFFFF;
+    }
+
+    .top-bar a {
+        font-size: 14px;
+        margin-left: 0px;
+        padding-left: 20px;
+    }
+
+    .content-container{
+        float: none;
+        width: 100%;
+    }
+
+    .links {
+        width: max-content;
+        padding-right: 20px;
+    }
+
+    .logo {
+        margin-top: 10px;
+        width: 25px;
+        height: 40px;
+    }
+
+    /*
+
+    Heading section
+
+    */
+
+    .headings {
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+    .heading {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: #131821;
+    }
+    .subheading {
+        margin-top: 10px;
+        min-width: 58.8%;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        color: #6A707B;
+    }
+
+    /* 
+    
+    Form section
+
+    */
+
+    .form-container {
+        margin-top: 20px;
+    }
+    
+    .email {
+        margin-right: 20px;
+        width: auto;
+    }
+
+    .submit-button{
+        width: 30px;
+    }
+    .email-input-field {
+        margin-left: 20px;
+    }
+    
+    .email-input-field, textarea {
+        padding-left: 19px;
+    }
+    .error {
+        margin-left: 20px;
+        margin-right: 14.70%;
+    }
+    
+    .checkboxInput {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    hr {
+        width: inherit;
+        margin-top: 20px;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        top: 20px;
+    }
+
+    /* 
+    
+    Social icon section
+
+    */
+
+    .social-tab {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .social-tab a~a {
+        margin-left: 10px;
+    }
+  }
 
 
 /* 
@@ -255,4 +511,40 @@ Style for success page
 .headings-success{
     margin-top: 40px;
     
+}
+
+@media screen and (min-width: 300px) and (max-width: 769px) {
+
+
+    .success{
+        margin-left: 20px;
+        margin-right: 20px;  
+        display: block;
+        box-sizing: border-box;
+    }
+    
+    .logo-success {
+       padding-top: 30px;
+    }
+    
+    .headings-success{
+        padding-top: 39px;
+    }
+
+    .headings-success h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: #131821;
+    }
+    
+    .headings-success .subheading {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #6A707B;
+        padding-bottom: 29px;
+    }
 }
